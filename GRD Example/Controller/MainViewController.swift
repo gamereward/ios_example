@@ -61,10 +61,10 @@ class MainViewController: UIViewController {
         let option = isLow ? 1 : 0
         let cardSymbol : Int = randomCard.symbol
         let bet = Double(inputBetAmount.text!)!
-        var pars : [String:Any] = [:]
-        pars["low"] = option
-        pars["cardSymbol"] = cardSymbol
-        pars["bet"] = bet
+        var pars : [Any] = []
+        pars.append(option)
+        pars.append(cardSymbol)
+        pars.append(bet)
         GameReward.CallServerScript(scriptName: "testscript", functionName: "lowhighgame", parameters: pars){ (error,message,results) in
             DispatchQueue.main.async{
                 if error == 0
@@ -76,14 +76,15 @@ class MainViewController: UIViewController {
                             self.resultCard.symbol = card["symbol"] as! Int
                             self.resultCard.suit = card["suit"] as! Int
                             self.showCard(imageView: self.hiddenCard, card: self.resultCard)
-                            let money : Double = Double((results[2] as? String)!)!
+                            let stringmoney = results[2] as? Double
+                            let money : Decimal = Decimal(stringmoney!)
                             let user : GrdUser  = GameReward.User
-                            user.balance = user.balance + Decimal(money)
+                            user.balance = user.balance + money
                             self.txtBalance.text = user.balance.description
                             if money > 0 {
-                                self.txtMessage.text = "CONGRATULATIONS! YOU WIN:" + String(money)
+                                self.txtMessage.text = "CONGRATULATIONS! YOU WIN:" + money.description
                             }else if money < 0 {
-                                self.txtMessage.text = "NOT LUCKY YET! LOSE:" + String(money)
+                                self.txtMessage.text = "NOT LUCKY YET! LOSE:" + money.description
                             }else{
                                 self.txtMessage.text = "DRAW"
                             }

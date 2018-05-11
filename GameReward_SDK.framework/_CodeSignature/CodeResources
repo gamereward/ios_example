@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/GameReward_SDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		71X5nHUAS0UEQBvfIgdIQ+kWp1s=
+		+q+KWv7nl/3gdY0UO/CLgWrAeug=
 		</data>
 		<key>Modules/GameReward_SDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		jMo+2XZPGJDizLTW7VlEzZyaZf4=
+		TvglsG9XpHUCeL6PlAV0r3u2mJ4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			71X5nHUAS0UEQBvfIgdIQ+kWp1s=
+			+q+KWv7nl/3gdY0UO/CLgWrAeug=
 			</data>
 			<key>hash2</key>
 			<data>
-			koLwbhAU9i98M3h4BUf/nIKtPlDpJKmOmuF2Xu8aH70=
+			wyJaUsrht9ujnY+YiMMPKtLtXeaas9r7kQ6ndrLOSHk=
 			</data>
 		</dict>
 		<key>Modules/GameReward_SDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jMo+2XZPGJDizLTW7VlEzZyaZf4=
+			TvglsG9XpHUCeL6PlAV0r3u2mJ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			J6RrU0+ndcebiEBnG3ueukRraMAMAS+C6biGWogEpA4=
+			oiuOYLuPNnD0L92KYNJTvxEDoISx/cBHwuLG5+TWyEk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

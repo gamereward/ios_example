@@ -15,9 +15,9 @@
 		09A47F3120A3F44E00020B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A47F2F20A3F44E00020B8D /* Main.storyboard */; };
 		09A47F3320A3F45000020B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A47F3220A3F45000020B8D /* Assets.xcassets */; };
 		09A47F3620A3F45000020B8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A47F3420A3F45000020B8D /* LaunchScreen.storyboard */; };
-		09A7CEA320A5E78D00DC8537 /* GameReward_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A7CEA220A5E78D00DC8537 /* GameReward_SDK.framework */; };
-		09A7CEA420A5E7F500DC8537 /* GameReward_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A7CEA220A5E78D00DC8537 /* GameReward_SDK.framework */; };
-		09A7CEA520A5E7F500DC8537 /* GameReward_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09A7CEA220A5E78D00DC8537 /* GameReward_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09A7CEAF20A5FBBE00DC8537 /* GameReward_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A7CEAE20A5FBBE00DC8537 /* GameReward_SDK.framework */; };
+		09A7CEB020A5FBC300DC8537 /* GameReward_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A7CEAE20A5FBBE00DC8537 /* GameReward_SDK.framework */; };
+		09A7CEB120A5FBC300DC8537 /* GameReward_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09A7CEAE20A5FBBE00DC8537 /* GameReward_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				09A7CEA520A5E7F500DC8537 /* GameReward_SDK.framework in Embed Frameworks */,
+				09A7CEB120A5FBC300DC8537 /* GameReward_SDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +45,7 @@
 		09A47F3220A3F45000020B8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09A47F3520A3F45000020B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09A47F3720A3F45000020B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09A7CEA220A5E78D00DC8537 /* GameReward_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GameReward_SDK.framework; sourceTree = "<group>"; };
+		09A7CEAE20A5FBBE00DC8537 /* GameReward_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GameReward_SDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09A7CEA420A5E7F500DC8537 /* GameReward_SDK.framework in Frameworks */,
-				09A7CEA320A5E78D00DC8537 /* GameReward_SDK.framework in Frameworks */,
+				09A7CEB020A5FBC300DC8537 /* GameReward_SDK.framework in Frameworks */,
+				09A7CEAF20A5FBBE00DC8537 /* GameReward_SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 		09A47F1F20A3F44E00020B8D = {
 			isa = PBXGroup;
 			children = (
-				09A7CEA220A5E78D00DC8537 /* GameReward_SDK.framework */,
+				09A7CEAE20A5FBBE00DC8537 /* GameReward_SDK.framework */,
 				09A47F2A20A3F44E00020B8D /* GRD Example */,
 				09A47F2920A3F44E00020B8D /* Products */,
 			);
@@ -343,6 +343,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GRD\\ Example",
+					"$(PROJECT_DIR)/GRD\\ Example",
 				);
 				INFOPLIST_FILE = "GRD Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -365,6 +367,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GRD\\ Example",
+					"$(PROJECT_DIR)/GRD\\ Example",
 				);
 				INFOPLIST_FILE = "GRD Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
